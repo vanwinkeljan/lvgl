@@ -19,6 +19,10 @@ extern "C" {
 #include <nuttx/config.h>
 #endif
 
+#ifdef __ZEPHYR__
+#include <zephyr_lvgl_conf.h>
+#endif
+
 /*******************
  * LV_MEM_SIZE
  *******************/
