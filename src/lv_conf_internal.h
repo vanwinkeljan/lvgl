@@ -19,6 +19,10 @@
 /* Handle special Kconfig options */
 #include "lv_conf_kconfig.h"
 
+#ifdef CONFIG_LV_CONF_SKIP
+#define LV_CONF_SKIP
+#endif
+
 /* If "lv_conf.h" is available from here try to use it later.*/
 #if defined __has_include
 #  if __has_include("lv_conf.h")
